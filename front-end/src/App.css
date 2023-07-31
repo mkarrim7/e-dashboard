@@ -1,0 +1,38 @@
+.nav-header ul li{
+  display: inline-block;
+  padding: 10px; 
+}
+.nav-header ul{
+  background-color: skyblue;
+}
+.nav-header ul li a{
+  color: #fff;
+  text-decoration: none;
+  margin:5px;
+}
+.Footer{
+  position: absolute;
+  bottom: 0px;
+  background-color: skyblue;
+  width: 100%;
+  text-align: center;
+}
+.Login{
+  margin-left: 100px;
+}
+.register{
+  margin-left: 100px;
+}
+ .inputBox{
+  padding: 7px;
+  display: block;
+  border: 1px solid skyblue;
+  width: 300px;
+  margin: 20px;
+}
+.appButton {
+  width: 318px;
+  margin-left: 20px;
+  height: 30px;
+  background-color: skyblue;
+}
