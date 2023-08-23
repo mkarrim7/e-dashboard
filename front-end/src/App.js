@@ -5,16 +5,20 @@ import Footer from './components/Footer'
 import SignUp from './components/SignUp'
 import PrivateComponent from './components/PrivateComponent';
 import Login from './components/Login';
+import AddProduct from './components/AddProduct';
+import ProductList from './components/ProductList';
+import UpdateProduct from './components/UpdateProduct';
+
 function App() {
   return (
-    <div className="App">
+    <div class="App">
     <BrowserRouter>
     <Nav />
     <Routes>
     <Route element={<PrivateComponent />} >
-     <Route path="/" element={<h1>Product Component</h1>} />
-     <Route path="/add" element={<h1>AddProduct Component</h1>} />
-     <Route path="/update" element={<h1>UpdateProduct Component</h1>} />
+     <Route path="/" element={<ProductList />} />
+     <Route path="/add" element={<AddProduct />} />
+     <Route path="/update/:id" element={<UpdateProduct />} />
      <Route path="/profile" element={<h1>Profile Component</h1>} />
      </Route>
      <Route path="/signUp" element={<SignUp />} />

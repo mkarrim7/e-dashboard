@@ -9,22 +9,19 @@ const Nav=()=>{
      navigate('/signUp');
    }
  return(
-    <div class="nav-header">
-     <ul>
-        <li><Link to="/">Product</Link></li>
-        <li><Link to="/add">Add Product</Link></li>
-        <li><Link to="/update">Update Product</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
-        {
-          auth?<li><Link to="/signUp" onClick={userLogout}>Logout</Link></li>:
-          <>
-          <li><Link to="/signUp">SignUp</Link></li>
-          <li><Link to="/login">Login</Link></li>
-          </>
-        }
-        <li></li>
+   <div class="nav-header">{
+     auth ? <ul>
+       <li><Link to="/">Product</Link></li>
+       <li><Link to="/add">Add Product</Link></li>
+       <li><Link to="/update">Update Product</Link></li>
+       <li><Link to="/profile">Profile</Link></li>
+       <li><Link to="/signUp" onClick={userLogout}>Logout({JSON.parse(auth).name})</Link></li>
+     </ul>:<ul class="nav-right">
+       <li><Link to="/signUp">SignUp</Link></li>
+       <li><Link to="/login">Login</Link></li>
      </ul>
-    </div>
+     }
+   </div>
  );
 }
 

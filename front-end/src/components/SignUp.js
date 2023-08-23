@@ -20,20 +20,20 @@ const SignUp=()=>{
             }
         })
         result = await result.json();
-        localStorage.setItem("user",JSON.stringify(result));
-        console.log(result);
+        localStorage.setItem("user",JSON.stringify(result.result));
+        localStorage.setItem("token",JSON.stringify(result.auth));
         navigate('/');
     }
     return(
-        <div className="register">
+        <div class="register">
             <h1>Register</h1>
-            <input className="inputBox" type="text" placeholder="Enter Name" 
+            <input class="inputBox" type="text" placeholder="Enter Name" 
             value={name} onChange={(e)=>setName(e.target.value)}/>
-            <input className="inputBox" type="text" placeholder="Enter Email"
+            <input class="inputBox" type="text" placeholder="Enter Email"
              value={email} onChange={(e)=>setEmail(e.target.value)} />
-            <input className="inputBox" type="password" placeholder="Enter Password" 
+            <input class="inputBox" type="password" placeholder="Enter Password" 
              value={password} onChange={(e)=>setPassword(e.target.value)}/>
-            <button onClick={collectData} className="appButton" type="submit">Sign Up</button>
+            <button onClick={collectData} class="appButton" type="submit">Sign Up</button>
         </div>
     )
 };

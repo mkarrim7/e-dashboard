@@ -1,38 +1,78 @@
-.nav-header ul li{
+.nav-header ul li {
   display: inline-block;
-  padding: 10px; 
+  padding: 10px;
 }
-.nav-header ul{
+
+.nav-header ul {
   background-color: skyblue;
 }
-.nav-header ul li a{
+
+.nav-header ul li a {
   color: #fff;
   text-decoration: none;
-  margin:5px;
+  margin: 5px;
 }
-.Footer{
+
+.Footer {
   position: absolute;
   bottom: 0px;
   background-color: skyblue;
   width: 100%;
   text-align: center;
 }
-.Login{
+
+.Login {
   margin-left: 100px;
 }
-.register{
+
+.register .AddProduct {
   margin-left: 100px;
 }
- .inputBox{
+
+.inputBox {
   padding: 7px;
   display: block;
   border: 1px solid skyblue;
   width: 300px;
   margin: 20px;
 }
+
 .appButton {
   width: 318px;
   margin-left: 20px;
   height: 30px;
   background-color: skyblue;
+}
+
+.InvalidError {
+  display: block;
+  margin-left: 20px;
+  margin-top: -20px;
+  color: red;
+}
+
+.Product-list {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Product-list ul li{
+  display: inline-block;
+  width: 150px;
+  border: 1px solid skyblue;
+  padding: 5px
+}
+
+.Product-list ul{
+  margin:0px;
+}
+
+.search{
+  width: 400px;
+  padding: 25px;
+  border: 1px solid skyblue;
+}
+
+.nav-right{
+  text-align: right;
 }
